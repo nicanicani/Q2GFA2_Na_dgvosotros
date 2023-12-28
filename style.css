@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap');
+body{
+    padding: 0;
+    margin: 0;  
+    background: url(media/stars.gif);
+    background-size: cover;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    position: fixed;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 10vw;
+    padding-right: 10vw;
+}
+
+.banner {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.598);
+} 
+
+.sun{
+  height: 500px;
+  width: 500px;
+  background: url(media/sun.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mercury{
+  height: 100px;
+  width: 100px;
+  background: url(media/mercury.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 47%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  animation: orbit1 3s linear infinite;
+}
+
+@keyframes orbit1{
+  0%{
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg) translateX(200px) rotate(360deg);
+  }
+}
+
+.venus{
+  height: 140px;
+  width: 140px;
+  background: url(media/venus.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 45.3%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3{
+  0%{
+    transform: rotate(0deg) translateX(330px) rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg) translateX(330px) rotate(360deg);
+  }
+}
+
+.earth{
+  height: 150px;
+  width: 150px;
+  background: url(media/earth.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 45.3%;
+  top: 40%;
+  animation: orbit4 15s linear infinite;
+}
+
+@keyframes orbit4{
+  0%{
+    transform: rotate(0deg) translateX(500px) rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg) translateX(500px) rotate(360deg);
+  }
+}
+
+.mars{
+  height: 120px;
+  width: 120px;
+  background: url(media/mars.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 46.3%;
+  top: 42%;
+  animation: orbit5 25s linear infinite;
+}
+
+@keyframes orbit5{
+  0%{
+    transform: rotate(0deg) translateX(650px) rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg) translateX(650px) rotate(360deg);
+  }
+}
